@@ -68,7 +68,12 @@ You will find the output files in the sub-directory `.build\SARA_NBIOT_EVK\GCC_A
 # Adding CoAP
 
 `mbed add mbed-trace`
+
 `mbed add nanostack-libservice`
+
 `mbed add mbed-client-c`
+
 `mbed update`
+
 `mbed compile -c`
+
