@@ -63,3 +63,12 @@ You will find the output files in the sub-directory `.build\SARA_NBIOT_EVK\GCC_A
   ...which will get debug output into the `.elf` file and switch optimisation off so that you can use a debugger.
 * Eclipse project files are included but you can also build from the command-line as above.
 * There is currently an issue where attempts to `malloc()` more than a total of 10324 bytes will succeed (up to 11572 bytes) by overlapping into the stack area.  While it is correct to overlap into the stack area, it shouldn't go that far.  This issue has been raised with ARM in [https://github.com/ARMmbed/mbed-os/issues/464](https://github.com/ARMmbed/mbed-os/issues/464).
+* 
+
+# Adding CoAP
+
+`mbed add mbed-trace`
+`mbed add nanostack-libservice`
+`mbed add mbed-client-c`
+`mbed update`
+`mbed compile -c`
